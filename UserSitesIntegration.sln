@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.6.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doppler.UserSitesIntegration", "Doppler.UserSitesIntegration\Doppler.UserSitesIntegration.csproj", "{7340F933-BBC0-401E-A779-4A1280A255F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doppler.UserSitesIntegration.Test", "Doppler.UserSitesIntegration.Test\Doppler.UserSitesIntegration.Test.csproj", "{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc Files", "Misc Files", "{04385F9F-95C6-4591-ACFC-FF65220CED49}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		.prettierignore = .prettierignore
+		build-n-publish.sh = build-n-publish.sh
+		demo.http = demo.http
+		Dockerfile = Dockerfile
+		Jenkinsfile = Jenkinsfile
+		package.json = package.json
+		README.md = README.md
+		verify-w-docker.sh = verify-w-docker.sh
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Debug|x64.Build.0 = Debug|Any CPU
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Debug|x86.Build.0 = Debug|Any CPU
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Release|x64.ActiveCfg = Release|Any CPU
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Release|x64.Build.0 = Release|Any CPU
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Release|x86.ActiveCfg = Release|Any CPU
+		{7340F933-BBC0-401E-A779-4A1280A255F3}.Release|x86.Build.0 = Release|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Debug|x64.Build.0 = Debug|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Debug|x86.Build.0 = Debug|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Release|x64.ActiveCfg = Release|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Release|x64.Build.0 = Release|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Release|x86.ActiveCfg = Release|Any CPU
+		{3C147D5D-9FDD-417B-8B3F-D023B1EDBD16}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E9BAD6C-D702-402F-984F-D2FDB247402F}
+	EndGlobalSection
+EndGlobal
