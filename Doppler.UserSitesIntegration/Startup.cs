@@ -11,6 +11,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Hellang.Middleware.ProblemDetails;
+using Doppler.UserSitesIntegration.DataAccess.DapperProvider;
+using Doppler.UserSitesIntegration.Repositories.DopplerDb;
 
 namespace Doppler.UserSitesIntegration
 {
@@ -60,6 +62,9 @@ namespace Doppler.UserSitesIntegration
                     c.AddServer(new OpenApiServer() { Url = baseUrl });
                 };
             });
+
+            services.AddDapperDataAccessProvider(Configuration);
+            services.AddDopplerDbRepositories();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
