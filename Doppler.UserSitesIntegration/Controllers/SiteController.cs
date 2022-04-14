@@ -15,5 +15,12 @@ namespace Doppler.UserSitesIntegration.Controllers
             throw new NotImplementedException();
         }
 
+        [AllowAnonymous]
+        [HttpGet]
+        [Route("sites/{domain}/isPushFeatureEnabled")]
+        public Task<ActionResult<bool>> IsPushFeatureEnabled([FromRoute] string domain)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
