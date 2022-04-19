@@ -7,9 +7,5 @@ public record InsertFooDbQuery(
 ) : IExecutableDbQuery
 {
     public string GenerateSqlQuery() => @"
-INSERT INTO Foo (
-    IdFoo
-) VALUES (
-    @IdFoo
-)";
+SELECT * from PushNotification";
 }

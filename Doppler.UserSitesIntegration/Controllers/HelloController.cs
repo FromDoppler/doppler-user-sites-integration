@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Doppler.UserSitesIntegration.DopplerSecurity;
+using Doppler.UserSitesIntegration.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -13,10 +14,19 @@ namespace Doppler.UserSitesIntegration.Controllers
     [ApiController]
     public class HelloController
     {
+        private readonly IFooRepository _r;
+
+        public HelloController(IFooRepository r)
+        {
+           _r = r;
+        }
+
         [AllowAnonymous]
         [HttpGet("/hello/anonymous")]
         public string GetForAnonymous()
         {
+            _r.CreateFooAsync();
+
             return "Hello anonymous!";
         }
 
