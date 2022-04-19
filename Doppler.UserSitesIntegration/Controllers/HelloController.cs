@@ -18,7 +18,7 @@ namespace Doppler.UserSitesIntegration.Controllers
 
         public HelloController(IFooRepository r)
         {
-           _r = r;
+            _r = r;
         }
 
         [AllowAnonymous]
