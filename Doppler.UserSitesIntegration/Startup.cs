@@ -13,6 +13,7 @@ using Microsoft.OpenApi.Models;
 using Hellang.Middleware.ProblemDetails;
 using Doppler.UserSitesIntegration.DataAccess.DapperProvider;
 using Doppler.UserSitesIntegration.Repositories.DopplerDb;
+using Doppler.UserSitesIntegration.Storage;
 
 namespace Doppler.UserSitesIntegration
 {
@@ -65,6 +66,8 @@ namespace Doppler.UserSitesIntegration
 
             services.AddDapperDataAccessProvider(Configuration);
             services.AddDopplerDbRepositories();
+
+            services.AddStorage(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
